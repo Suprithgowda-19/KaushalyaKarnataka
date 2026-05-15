@@ -24,39 +24,74 @@
 ## 📁 Project Structure
 ## 📁 Project Structure
 KaushalyaKarnataka/
+│
 ├── app/
 │   ├── src/
 │   │   ├── main/
 │   │   │   ├── java/com/example/kaushalyakarnataka/
-│   │   │   │   ├── components/
-│   │   │   │   │   ├── WorkerCard.kt
-│   │   │   │   │   └── ServiceCard.kt
-│   │   │   │   ├── data/
-│   │   │   │   │   └── FirestoreRepository.kt
+│   │   │   │
+│   │   │   ├── components/              # Reusable UI components
+│   │   │   │   ├── WorkerCard.kt
+│   │   │   │   ├── JobCard.kt
+│   │   │   │   └── CustomButton.kt
+│   │   │   │
+│   │   │   ├── screens/                 # App screens
+│   │   │   │   ├── auth/
+│   │   │   │   │   ├── LoginScreen.kt
+│   │   │   │   │   └── RegisterScreen.kt
+│   │   │   │   │
+│   │   │   │   ├── worker/
+│   │   │   │   │   ├── WorkerHomeScreen.kt
+│   │   │   │   │   ├── JobListScreen.kt
+│   │   │   │   │   └── ProfileScreen.kt
+│   │   │   │   │
+│   │   │   │   └── employer/
+│   │   │   │       ├── EmployerDashboard.kt
+│   │   │   │       ├── PostJobScreen.kt
+│   │   │   │       └── ApplicantsScreen.kt
+│   │   │   │
+│   │   │   ├── navigation/              # Navigation setup
+│   │   │   │   └── AppNavigation.kt
+│   │   │   │
+│   │   │   ├── data/                    # Data layer
 │   │   │   │   ├── model/
-│   │   │   │   │   └── Worker.kt
-│   │   │   │   ├── navigation/
-│   │   │   │   │   ├── BottomNav.kt
-│   │   │   │   │   └── NavGraph.kt
-│   │   │   │   ├── screens/
-│   │   │   │   │   ├── HomeScreen.kt
-│   │   │   │   │   ├── ServicesScreen.kt
-│   │   │   │   │   ├── WorkersScreen.kt
-│   │   │   │   │   ├── ProfileScreen.kt
-│   │   │   │   │   └── WorkerDetailsScreen.kt
-│   │   │   │   ├── ui/theme/
-│   │   │   │   │   ├── Color.kt
-│   │   │   │   │   ├── Theme.kt
-│   │   │   │   │   └── Type.kt
-│   │   │   │   ├── viewmodel/
-│   │   │   │   │   └── WorkerViewModel.kt
-│   │   │   │   └── MainActivity.kt
-│   │   │   ├── res/
-│   │   │   └── AndroidManifest.xml
+│   │   │   │   │   ├── User.kt
+│   │   │   │   │   ├── Job.kt
+│   │   │   │   │   └── Application.kt
+│   │   │   │   │
+│   │   │   │   ├── repository/
+│   │   │   │   │   └── FirebaseRepository.kt
+│   │   │   │   │
+│   │   │   │   └── remote/
+│   │   │   │       └── FirebaseService.kt
+│   │   │   │
+│   │   │   ├── utils/                   # Utility classes
+│   │   │   │   ├── Constants.kt
+│   │   │   │   └── Validators.kt
+│   │   │   │
+│   │   │   ├── ui/theme/                # App theme files
+│   │   │   │   ├── Color.kt
+│   │   │   │   ├── Theme.kt
+│   │   │   │   └── Type.kt
+│   │   │   │
+│   │   │   └── MainActivity.kt
+│   │   │
+│   │   ├── res/                         # Resources
+│   │   │   ├── drawable/
+│   │   │   ├── values/
+│   │   │   └── mipmap/
+│   │   │
+│   │   └── AndroidManifest.xml
+│   │
 │   ├── build.gradle.kts
 │   └── google-services.json
+│
+├── gradle/
 ├── build.gradle.kts
-└── README.md
+├── settings.gradle.kts
+├── gradle.properties
+├── README.md
+└── .gitignore
 
 # Project documentation
 
