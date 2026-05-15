@@ -23,6 +23,7 @@
 
 ## 📁 Project Structure
 ## 📁 Project Structure
+```text
 KaushalyaKarnataka/
 │
 ├── app/
